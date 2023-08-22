@@ -1,0 +1,9 @@
+@media (max-width: 575px) {
+    header {
+        justify-content: space-around;
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+}
