@@ -10,3 +10,7 @@
 
 * Buttons sollten unten rechts bündig sein
 * Font Size fixen (landscape mobile)
+
+* Favicon
+* Twitter Embeds?
+* Fotos?
