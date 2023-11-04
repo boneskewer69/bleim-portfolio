@@ -41,6 +41,7 @@ h5,
 h6 {
     color: var(--text-primary);
     margin: 0;
+    font-variant: initial;
 }
 
 h2,
@@ -145,6 +146,7 @@ article {
     gap: 1em;
     padding: 1em;
     border-radius: .75em;
+    
 }
 
 .article-group {
