@@ -1,0 +1,145 @@
+/* infra */
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-100.otf);
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-100-italic.otf);
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-200.otf);
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-200-italic.otf);
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-300.otf);
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-300-italic.otf);
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-400.otf);
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-400-italic.otf);
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-500.otf);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-500-italic.otf);
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-600.otf);
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-600-italic.otf);
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-700.otf);
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-700-italic.otf);
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-800.otf);
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-800-italic.otf);
+    font-weight: 800;
+    font-style: italic;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-900.otf);
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: infra;
+    src: url(/font/infra/infra-900-italic.otf);
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: normal;
+}
