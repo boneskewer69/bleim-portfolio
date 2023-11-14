@@ -1,9 +1,14 @@
 @media (max-width: 575px) {
     header {
         justify-content: space-around;
+        gap: 0;
     }
 
     footer {
         justify-content: space-around;
+    }
+
+    .languages {
+        flex-direction: column;
     }
 }

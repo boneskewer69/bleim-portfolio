@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 html {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: infra;
+    font-weight: 400;
     color: var(--text-primary);
     background-color: var(--background-primary);
 }
@@ -41,15 +40,9 @@ h5,
 h6 {
     color: var(--text-primary);
     margin: 0;
-    font-variant: initial;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    font-family: infra;
+    font-weight: 800;
 }
 
 ul {
@@ -146,7 +139,6 @@ article {
     gap: 1em;
     padding: 1em;
     border-radius: .75em;
-    
 }
 
 .article-group {
@@ -161,21 +153,35 @@ article {
 }
 
 .core-beliefs {
-    background-color: #594383;
+    background-color: rgba(89, 67, 131, 0.5);
     border-radius: 1em;
 }
 
 .experience {
-    background-color: #AB92BF;
+    background-color: rgba(171, 146, 191, 0.4);
 }
 
 .example-work {
-    background-color: #5DAFB8;
+    background-color: rgba(93, 175, 184, 0.4);
     /* background-color: #463566; */
 }
 
 .strengths {
-    background-color: #313a74;
+    background-color: rgba(49, 58, 116, 0.5);
+}
+
+.references {
+    background-color: rgba(6, 81, 67, 0.6);
+    justify-content: start;
+}
+
+.reference-list > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.reference-list > ul > li > a {
+    text-decoration: underline;
 }
 
 .team {
@@ -190,15 +196,22 @@ article {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     padding: 1em;
     background-color: var(--background-primary);
     width: 100%;
+    position: sticky;
+    bottom: 0;
+    justify-content: center;
+}
+
+.footer-items {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    bottom: 0;
     gap: 1em;
 }
 
@@ -206,6 +219,19 @@ footer {
     display: flex;
     gap: 1em;
     align-items: center;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.languages > img {
+    width: 2.5em;
+    height: 100%;
+    border-radius: .15em;
 }
 
 .socials a img {
