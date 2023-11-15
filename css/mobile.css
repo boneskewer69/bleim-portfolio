@@ -1,14 +1,22 @@
 @media (max-width: 575px) {
+    .hide-role-ampersand {
+        display: none;
+    }
+
+    .role {
+        display: flex;
+        flex-direction: column;
+    }
+
     header {
-        justify-content: space-around;
-        gap: 0;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     footer {
-        justify-content: space-around;
-    }
-
-    .languages {
-        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
