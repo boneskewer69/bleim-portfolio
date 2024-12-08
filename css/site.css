@@ -181,8 +181,20 @@ article {
     padding-left: 0;
 }
 
+.reference-list > ul > li {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+/*
 .reference-list > ul > li > a {
     text-decoration: underline;
+}
+*/
+
+.reference-list > ul > li > a > img {
+    height: 1em;
 }
 
 .team {
@@ -233,6 +245,7 @@ footer {
     width: 2em;
     height: 100%;
     border-radius: .15em;
+    border: solid white 1px;
 }
 
 .socials a img {
