@@ -1,0 +1,12 @@
+when:
+  event: tag
+
+steps:
+  - name: build-push
+    image: woodpeckerci/plugin-docker-buildx
+    settings:
+      repo: forge.fullbyte.de/1bleim/portfolio
+      tags: latest,${CI_COMMIT_TAG#v}
+      username: boneskewer69
+      password:
+        from_secret: registry_token
