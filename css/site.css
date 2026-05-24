@@ -55,6 +55,12 @@ hr {
 
 img {
     max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+picture {
+    display: contents;
 }
 
 a {
@@ -102,6 +108,10 @@ body {
 
     min-height: 100vh;
     background-image: url("../img/khazix-deathblossom-splash.jpg");
+    background-image: image-set(
+        url("../img/khazix-deathblossom-splash.webp") type("image/webp"),
+        url("../img/khazix-deathblossom-splash.jpg") type("image/jpeg")
+    );
     background-size: cover;
     background-position: center;
 }
@@ -250,4 +260,13 @@ footer {
 
 .socials a img {
     height: 1.5rem;
+}
+
+.reference-list > ul > li > a,
+.socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
 }

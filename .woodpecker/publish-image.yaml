@@ -1,0 +1,34 @@
+when:
+  event: tag
+
+steps:
+  - name: build-push
+    image: woodpeckerci/plugin-docker-buildx
+    privileged: true
+    settings:
+      registry: forge.fullbyte.de
+      repo: forge.fullbyte.de/1bleim/portfolio
+      tags: latest,${CI_COMMIT_TAG#v}
+      platforms: linux/amd64,linux/arm64
+      username: specht
+      password:
+        from_secret: specht_token
+      labels:
+        - org.opencontainers.image.authors=${CI_COMMIT_AUTHOR}
+        - org.opencontainers.image.url=${CI_REPO_URL}/src/tag/${CI_COMMIT_TAG}
+        - org.opencontainers.image.revision=${CI_COMMIT_SHA}
+        - org.opencontainers.image.version=${CI_COMMIT_TAG#v}
+  - name: trigger-renovate
+    image: curlimages/curl:latest
+    environment:
+      TRIGGER_TOKEN:
+        from_secret: woodpecker_token
+    commands:
+      - |
+        curl -sf -X POST \
+          -H "Authorization: Bearer $TRIGGER_TOKEN" \
+          -H "Content-Type: application/json" \
+          "https://ci.fullbyte.de/api/repos/5/pipelines" \
+          --data-raw "{\"branch\":\"main\"}"
+    when:
+      status: success
