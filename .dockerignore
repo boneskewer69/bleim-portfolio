@@ -1,0 +1,7 @@
+.git
+.gitignore
+.DS_Store
+.woodpecker.yml
+Dockerfile
+README.md
+plan.md
