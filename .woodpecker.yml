@@ -4,6 +4,7 @@ when:
 steps:
   - name: build-push
     image: woodpeckerci/plugin-docker-buildx
+    privileged: true
     settings:
       repo: forge.fullbyte.de/1bleim/portfolio
       tags: latest,${CI_COMMIT_TAG#v}
