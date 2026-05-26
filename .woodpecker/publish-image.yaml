@@ -12,7 +12,7 @@ steps:
       platforms: linux/amd64,linux/arm64
       username: specht
       password:
-        from_secret: registry_token
+        from_secret: specht_token
       labels:
         - org.opencontainers.image.authors=${CI_COMMIT_AUTHOR}
         - org.opencontainers.image.url=${CI_REPO_URL}/src/tag/${CI_COMMIT_TAG}
