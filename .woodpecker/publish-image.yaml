@@ -10,7 +10,7 @@ steps:
       repo: forge.fullbyte.de/1bleim/portfolio
       tags: latest,${CI_COMMIT_TAG#v}
       platforms: linux/amd64,linux/arm64
-      username: helferlein
+      username: specht
       password:
         from_secret: registry_token
       labels:
